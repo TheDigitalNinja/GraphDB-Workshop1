@@ -13,4 +13,4 @@
 
 Export the SQL tables using the get_output.sql file.
 
-``` docker-compose run mariadb sh -c "mysql -uroot movies -pexample -h mariadb < /output/get_output.sql" ```
+``` docker-compose run mariadb sh -c "mysql -uroot -pexample movies -h mariadb < /output/get_output.sql" ```
