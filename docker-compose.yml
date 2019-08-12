@@ -12,7 +12,7 @@ services:
   mariadb:
     volumes:
       - ./sql_import:/docker-entrypoint-initdb.d
-      - ./output:/output
+      - ./data:/data
     image: mariadb
     restart: always
     environment:
