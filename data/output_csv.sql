@@ -1,0 +1,11 @@
+SELECT 'id', 'name', 'desc', 'img'
+UNION ALL 
+SELECT * FROM movies INTO OUTFILE '/data/movies.csv' FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n';
+
+SELECT 'id', 'name', 'img'
+UNION ALL
+SELECT * FROM actors INTO OUTFILE '/data/actors.csv' FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n';
+
+SELECT 'id', 'movie', 'actor'
+UNION ALL
+SELECT * FROM actors_in_movies INTO OUTFILE '/data/actors_in_movies.csv' FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n';

@@ -11,6 +11,6 @@
 
 ## SQL to Graph
 
-Export the SQL tables using the get_output.sql file.
+Export the SQL tables using the output_csv.sql file.
 
-``` docker-compose run mariadb sh -c "mysql -uroot -pexample movies -h mariadb < /data/get_output.sql" ```
+``` docker-compose run mariadb sh -c "mysql -uroot -pexample movies -h mariadb < /data/output_csv.sql" ```
