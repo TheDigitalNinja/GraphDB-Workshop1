@@ -30,6 +30,8 @@ services:
     restart: always
     environment:
       NEO4J_AUTH: none
+    volumes:
+      - ./data:/data
     ports:
       - 7474:7474
       - 7687:7687
